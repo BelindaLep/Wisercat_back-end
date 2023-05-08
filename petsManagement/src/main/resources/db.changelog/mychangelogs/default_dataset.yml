@@ -1,0 +1,49 @@
+databaseChangeLog:
+  - changeSet:
+      id: defaultDataSet
+      author: Mari
+      changes:
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: name
+                  value: Milli
+              - column:
+                  name: code
+                  value: 22446688
+              - column:
+                  name: type
+                  value: DOG
+              - column:
+                  name: color
+                  value: black
+              - column:
+                  name: origin
+                  value: Estonia
+            schemaName: public
+            tableName: PET
+        - insert:
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: name
+                  value: Rommi
+              - column:
+                  name: code
+                  value: 98723465
+              - column:
+                  name: type
+                  value: CAT
+              - column:
+                  name: color
+                  value: brown
+              - column:
+                  name: origin
+                  value: Latvia
+            schemaName: public
+            tableName: PET

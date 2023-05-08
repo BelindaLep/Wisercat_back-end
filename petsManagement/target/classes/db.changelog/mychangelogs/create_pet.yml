@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_spaceship
+      author: Mari
+      changes:
+        - createTable:
+            tableName: PET
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: text
+              - column:
+                  name: code
+                  type: text
+              - column:
+                  name: type
+                  type: int
+              - column:
+                  name: color
+                  type: text
+              - column:
+                  name: origin
+                  type: text
